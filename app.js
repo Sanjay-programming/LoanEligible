@@ -11,13 +11,7 @@ const { spawn } = require('child_process');//for invoking .py file
 
 const pythonDepsCommand = 'pip install pandas';
 
-spawn(pythonDepsCommand, (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error installing Python dependencies: ${error}`);
-    return;
-  }
-  console.log('Python dependencies installed successfully');
-});
+spawn(pythonDepsCommand);
 
 var duser;
 //mongodbpassword=qk5K5dwp85tX2ZGA, username=sugamganachary
