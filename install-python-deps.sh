@@ -1,1 +1,1 @@
-pip install pandas
+pip install --target=PYTHONPATH pandas
