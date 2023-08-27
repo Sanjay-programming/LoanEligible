@@ -1,1 +1,1 @@
-pip install --target=PYTHONPATH pandas numpy pytz dateutil
+pip install --target=PYTHONPATH pandas numpy dateutil
