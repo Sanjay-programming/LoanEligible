@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm install && pip -r requirements.txt",
+    "install": "npm install && pip install pandas",
     "dev": "npm install & pip install"
   },
   "author": "",
