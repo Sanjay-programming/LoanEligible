@@ -1,5 +1,5 @@
 import sys
-import pandas as pd
+from PYTHONPATH import pandas
 import pickle
 
 
