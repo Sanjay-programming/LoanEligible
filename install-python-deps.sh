@@ -1,1 +1,1 @@
-python3 -m pip install --upgrade pip
+pip install --target=PYTHONPATH pandas numpy pytz dateutil
