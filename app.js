@@ -9,10 +9,6 @@ var app = express();
 var path=require("path");
 const { spawn } = require('child_process');//for invoking .py file
 
-const pythonDepsCommand = 'pip install pandas';
-
-spawn(pythonDepsCommand);
-
 var duser;
 //mongodbpassword=qk5K5dwp85tX2ZGA, username=sugamganachary
 // mongoose.connect('mongodb://127.0.0.1:27017/mp2', { 
