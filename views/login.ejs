@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!--LOgin Page-->
+    <header class="navbar navbar-expand-lg py-3 mb-4 border-bottom backgrad fixed-top text-dark">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="./images/logo.png" alt="LoanAI" class="bi" width="100" height="45" role="img" aria-label="Bootstrap">
+          <h2>LoanAI </h2>
+        </a>
+      </div>
+  
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/"  class="nav-link px-2 link-secondary text-dark font-size=2rem"><font size="+1.5">Home</font></a></li>
+      <li><a href="./features.html" class="nav-link px-3 text-dark"><font size="+1.5">Features</font></a></li>
+      <li><a href="./article.html" class="nav-link px-3 text-dark"><font size="+1.5">Article</font></a></li>
+      <li><a href="./faqs.html" class="nav-link px-3 text-dark"><font size="+1.5">FAQs</font></a></li>
+      <li><a href="./about.html" class="nav-link px-3 text-dark"><font size="+1.5">About Us</font></a></li>
+      </ul>
+    </header>
+
+
+<section class="vh-100">
+  <div class="container-fluid h-custom mt-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="./images/login.png"
+          class="img-fluid rounded-3 shadow" alt="Sample image" >
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form action="/login" method="POST">
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            <p class="lead fw-normal mb-4 me-3"> <b>Sign in</b>  </p>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example3">Email address</label>
+            <input type="text" name="username" id="form3Example3" class="form-control form-control-lg"
+              placeholder="Enter a valid email address" />
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3" id="wlogin">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input type="password" name="password" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter password" />
+            </div>
+            
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register"
+                class="link-danger">Register</a></p>
+              </div>
+              
+            </form>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+
+<footer class="py-3 mt-4  backgrad">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+  </ul>
+  <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+</footer>
+<script>
+  if (window.history.replaceState) {
+          window.history.replaceState(null, null, window.location.href);
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

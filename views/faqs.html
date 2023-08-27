@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>LoanAI FAQ's</title>
+    <link rel="icon" href="./images/favicon1.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stylefaq.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+
+    <!--Navbar--> 
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom backgrad text-dark">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="./images/logo.png" alt="LoanAI" class="bi" width="100" height="45" role="img" aria-label="Bootstrap">
+        <h2>LoanAI </h2>
+      </a>
+    </div>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="/"  class="nav-link px-2 link-secondary text-dark font-size=2rem"><font size="+1.5">Home</font></a></li>
+      <li><a href="./features.html" class="nav-link px-3 text-dark"><font size="+1.5">Features</font></a></li>
+      <li><a href="./article.html" class="nav-link px-3 text-dark"><font size="+1.5">Article</font></a></li>
+      <li><a href="./faqs.html" class="nav-link px-3 text-dark"><font size="+1.5">FAQs</font></a></li>
+      <li><a href="./about.html" class="nav-link px-3 text-dark"><font size="+1.5">About Us</font></a></li>
+    </ul>
+
+    <div class="col-md-3 text-end" style="margin-right: 30px">
+      <!-- <a href="/login">
+        <button   class="btn btn-outline-primary me-2">Login</button>
+      </a> -->
+      <a href="/login" class="btn btn-primary" width="25px">
+        <button  class="btn btn-primary border-0">Log in</button>
+      </a>
+      <a href="/register" class="btn btn-primary" width="25px">
+        <button  class="btn btn-primary border-0">Sign-up</button>
+      </a>
+    </div>
+  </header>
+
+
+
+
+
+    <div class="wrapper">
+      <h1><b>Frequently Asked Questions</b></h1>
+
+      <div class="faq">
+        <button class="accordion">
+          What is LoanAI?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            LoanAI is a Website where Machine Learning Algorithms are used to assess and predict the likelihood of loan approval based on various factors, enabling more accurate and efficient Money lending decisions.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            What is the use of Machine Learning in Loan Eligiblity Process?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Machine learning can be used to automate the decision-making process for loan amount and terms. By using data from previous loan applications, machine learning models can learn to identify patterns that are predictive of loan default.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does LoanAI helps MoneyLenders and Borrowers?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            LoanAI aims to reduce the time and effort required for manual loan approval processes, minimize the risk of default, and provide a more transparent and efficient loan application process for both lenders and borrowers.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            Which algorithm is used for loan prediction using machine learning?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Logistic Regression is the Algorithm which we have used for predicting binary outcome. Logistic Regression is a classification algorithm. It is used to predict a binary outcome (1 / 0, Yes / No, True / False) given a set of independent variables.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Which Tools/Technologies did you use to Create LoanAI?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <ul>
+                <li>Python </li>
+                <li>Scikit-Learn</li>
+                <li>Numpy</li>
+                <li>HTML,CSS</li>
+                <li>JavaScript</li>
+                <li>Node,Express</li>
+                <li>MongoDB</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What are the steps involved in creating a machine learning model ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            <ul>
+                <li>Gathering Data</li>
+                <li>Data preparation</li>
+                <li>Feature Engineering</li>
+                <li>Model Evaluation</li>
+                <li>Training and Testing Model</li>
+                <li>Model Deployment</li>
+                <li>Monitoring and Maintenance</li>
+            </ul>
+           <img src="../views/images/ml_model.png"  height="300px" width="700px"  class="rounded-5 mx-auto d-block" alt="ml-MODEL">
+          </p>
+        </div>
+      </div>  
+    </div>
+
+    <!--footer-->
+  <footer class="py-3 mt-4  backgrad">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="./features.html" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="./article.html" class="nav-link px-2 text-body-secondary">Article</a></li>
+      <li class="nav-item"><a href="./faqs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="./about.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+  </footer>
+</body>
+
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
