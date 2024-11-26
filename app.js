@@ -10,13 +10,8 @@ var path=require("path");
 const { spawn } = require('child_process');//for invoking .py file
 
 var duser;
-//mongodbpassword=qk5K5dwp85tX2ZGA, username=sugamganachary
-// mongoose.connect('mongodb://127.0.0.1:27017/mp2', { 
-//     useNewUrlParser: true 
 
-// }).then(() => console.log('DataBase connection successful'))
-//   .catch((err) => console.log(err))
-mongoose.connect('mongodb+srv://sugamganachary:qk5K5dwp85tX2ZGA@loanai.6snyonc.mongodb.net/?retryWrites=true&w=majority', { 
+mongoose.connect('mongodb+srv://sanjaypothuraju11:irJrjxkCxgpBr8zz@loan.t6pi3.mongodb.net/?retryWrites=true&w=majority&appName=loan', { 
     useNewUrlParser: true 
 
 }).then(() => console.log('DataBase connection successfully'))
@@ -100,14 +95,10 @@ app.get("/secretonot",isLoggedIn, function (req, res) {
 
 
 // Showing register form
-app.get("/register",isLoggedIn, function (req, res) {
-  if(req.loggedIn){
-    res.render("secret", { cname: duser });
-  }
-  else{
-    res.redirect("register");
-  }
+app.get("/register", (req, res) => {
+  res.render("register");
 });
+
 // Handling user signup
 app.post("/register", async (req, res) => {
     const existing = await User.findOne({ username: req.body.username });

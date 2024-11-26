@@ -14,7 +14,8 @@ height: 100%;
 }
 }
 .backgrad{
-    background-image: linear-gradient( 109.6deg, rgb(50, 171, 231) 11.2%, rgb(255, 138, 249) 91.1% );
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 .hidden{
